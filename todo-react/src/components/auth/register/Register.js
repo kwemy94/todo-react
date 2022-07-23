@@ -67,7 +67,7 @@ const Register = () => {
     ];
     const handledSubmit = (e)=>{
         e.preventDefault();
-        alert("Register is not yet functional");
+        alert("The registration is not yet functional");
     }
 
     const onChange =(e)=>{
