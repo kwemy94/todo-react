@@ -34,13 +34,13 @@
       margin-bottom: 30px;
 }
 
-.formInput{
+.formInput, .formSelect{
     display: flex;
     flex-direction: column;
     width: 280px;
 }
 
-input{
+input, select{
     padding: 15px;
     margin: 10px 0px;
     border-radius: 5px;

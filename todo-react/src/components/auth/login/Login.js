@@ -49,7 +49,7 @@ const Login = () => {
       <form onSubmit={handledSubmit}>
           <h1>Login</h1>
           {inputs.map((input) =>(
-                  <FormInput
+                  <FormInput 
                    key={input.id} 
                    {...input} 
                    value={values[input.name]} 
