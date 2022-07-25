@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react"
 import FormInput from "../../auth/forms/FormInput";
+import { useSelector } from "react-redux";
+import {Navigate} from 'react-router-dom';
 
 function Create() {
+
+    
+    const {isLogin} = useSelector(state => state.auth)
 
     let [todo, setTodo] = useState(
         {
@@ -111,6 +116,9 @@ function Create() {
             alert('Tache crée!')
         }
         
+    }
+    if (!isLogin) {
+        return <Navigate to='/'/>
     }
 
     return(

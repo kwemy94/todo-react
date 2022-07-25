@@ -44,7 +44,7 @@ input, select{
     padding: 15px;
     margin: 10px 0px;
     border-radius: 5px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 }
 
 
@@ -60,10 +60,11 @@ span{
     display: none;
 }
 
-input:invalid[focused="true"]{
-    border: 1px solid red;
+.input-error{
+    border-color: red;
 }
-
-input:invalid[focused="true"] ~ span{
+.error-message{
+    color: red;
+    font-size: 10px;
     display: block;
 }
